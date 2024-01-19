@@ -1,0 +1,18 @@
+.Menulist{
+    color: white;
+    width: inherit;
+    height: 17rem;
+    background-color: black;
+    position: relative;
+    top: 1rem;
+    transition: height 1s ease-in-out;
+    overflow: hidden;
+    /* transition-delay: 2s; */
+    /* animation-name: test; */
+    /* animation-duration: 1s; */
+    /* transition-timing-function: linear; */
+}
+.categorylist{
+    list-style-type: none;
+    padding: 0;
+}

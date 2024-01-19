@@ -1,0 +1,15 @@
+/* img{
+    width: 5rem;
+    height: 5rem;
+} */
+.category_images{
+    width: 8rem;
+    height: 8rem;
+}
+.categoricomp{
+    width: 80vw;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
