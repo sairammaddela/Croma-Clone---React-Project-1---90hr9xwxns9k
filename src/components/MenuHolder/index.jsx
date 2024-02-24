@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./style.css"
+import { Link } from "react-router-dom";
 const Menuholder=(props)=>{
     //const [getarr,setarr]=useState();
     // useEffect(()=>{
@@ -19,10 +20,10 @@ const Menuholder=(props)=>{
         height:"0rem"
     });
     
-        if(bool&&getstyleheight.height!="17rem")
+        if(bool&&getstyleheight.height!="19rem")
         {
 
-            setstyleheight({height:"17rem"});
+            setstyleheight({height:"19rem"});
         }
         else if(getstyleheight.height!=="0rem"&&!bool)
         {
@@ -34,7 +35,7 @@ const Menuholder=(props)=>{
             <div className="Menulist" style={getstyleheight}>
                 <ul className="categorylist">
                 {props.catarr?.map(val=>{
-                    return <li>{val}</li>;
+                    return <li className="menulistitem"><Link to={`/category/${val}`} className="menulinkitem">{val}</Link></li>;
                 })}
                 </ul>
             </div>

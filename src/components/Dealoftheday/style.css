@@ -11,8 +11,10 @@
 .dodcard{
     text-align: left;
     padding: 1rem;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
+    position: relative;
     /* align-items: center; */
     justify-content: center;
     height: 20rem;
@@ -21,6 +23,12 @@
 }
 .dealoftheday{
     height: 25rem;
+}
+.heartclass{
+    width: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 .dodname{
     -webkit-box-orient: vertical;

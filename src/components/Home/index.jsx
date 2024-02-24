@@ -5,6 +5,9 @@ import { createContext,useState,useEffect } from "react";
 import Dealoftheday from "../Dealoftheday/Dealoftheday";
 import Trendingdeals from "../Trendingdeals";
 import Subcategorie from "../Subcategorie";
+import "./style.css";
+import Footer from "../footer";
+import Carousel from "../Banner";
 export const store=createContext();
 const Home=(props)=>{
     const [getcatarr,setcatarr]=useState();
@@ -21,9 +24,12 @@ const Home=(props)=>{
     })
 },[]);
 return(
-    <div>
+    <div className="home">
+      
         <store.Provider value={[getcatarr,setcatarr]}>
+        
         <Navbar/>
+        <Carousel/>
         <Categories/>
   <Dealoftheday/>
   <Trendingdeals/>
@@ -33,6 +39,7 @@ return(
     })
   }
   </store.Provider>
+  <Footer/>
     </div>
 )
 }
